@@ -1,31 +1,41 @@
 body {
-    font-family: 'Poppins', Helvetica, sans-serif !important;
+    font-family: "Poppins", Helvetica, sans-serif !important;
 }
 
-.filler{
+.filler {
     height: 50px;
 }
 
-#landing{
-    min-height: calc( 100vh - 50px );
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #6c757d;
 }
 
-#landing .pic-container{
+#landing {
+    min-height: calc(100vh - 50px);
+}
+
+#landing .pic-container {
     display: grid;
     place-items: center;
 }
 
-#landing .name-container{
+#landing .name-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.name-container h3, h5{
+.name-container h3,
+h5 {
     font-weight: 400;
 }
 
-.name-container a{
+.name-container a {
     font-size: 26px;
     color: #6c757d;
     margin-right: 10px;
@@ -33,7 +43,7 @@ body {
     position: relative;
 }
 
-.name-container a span{
+.name-container a span {
     position: absolute;
     border-radius: 100%;
     display: block;
@@ -48,21 +58,24 @@ body {
 
 .name-container a:focus {
     outline: none;
-
 }
 
-.name-container a:hover span{
+.name-container a:hover span {
     background-color: #e5e6e7;
 }
-.name-container a:focus span{
+.name-container a:focus span {
     background-color: #e5e6e7;
 }
 
-.main-pic{
+.main-pic {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background-image: url('Sriram.jpeg');
+    background-color: #6c757d;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-image: url("images/Sriram.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,25 +86,61 @@ body {
     color: #686c70 !important;
 }
 
+.name-container p img {
+    width: 33px;
+}
 
+.name-container p {
+    font-size: 25px;
+}
+
+#about,
+#techIuse {
+    padding-top: 100px;
+}
+
+#about {
+    max-width: 50ch;
+}
+
+#tech-list img {
+    height: 70px;
+    margin: 20px;
+}
+
+@keyframes color {
+    0% {
+        background-color: #e5e6e7;
+    }
+    50% {
+        background-color: #cacbcc;
+    }
+    100% {
+        background-color: #e5e6e7;
+    }
+}
 
 @media only screen and (max-width: 992px) {
-    .main-pic{
+    .main-pic {
         width: 300px;
         height: 300px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .main-pic{
+    .main-pic {
         width: 350px;
         height: 350px;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    .main-pic{
+    .main-pic {
         width: 300px;
         height: 300px;
+    }
+
+    #tech-list img {
+        height: 50px;
     }
 }
