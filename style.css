@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', Helvetica, sans-serif !important;
+}
+
+.filler{
+    height: 50px;
+}
+
+#landing{
+    min-height: calc( 100vh - 50px );
+}
+
+#landing .pic-container{
+    display: grid;
+    place-items: center;
+}
+
+#landing .name-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name-container h3, h5{
+    font-weight: 400;
+}
+
+.name-container a{
+    font-size: 26px;
+    color: #6c757d;
+    margin-right: 10px;
+    height: 100%;
+    position: relative;
+}
+
+.name-container a span{
+    position: absolute;
+    border-radius: 100%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+
+.name-container a:focus {
+    outline: none;
+
+}
+
+.name-container a:hover span{
+    background-color: #e5e6e7;
+}
+.name-container a:focus span{
+    background-color: #e5e6e7;
+}
+
+.main-pic{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: url('Sriram.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-name {
+    font-weight: 500;
+    color: #686c70 !important;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .main-pic{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-pic{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-pic{
+        width: 300px;
+        height: 300px;
+    }
+}
