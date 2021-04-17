@@ -31,5 +31,6 @@ techList.forEach(([techName, techUrl]) => {
     tech.setAttribute('data-toggle', 'tooltip');
     tech.setAttribute('data-placement', 'bottom');
     tech.setAttribute('title', techName);
+    tech.alt = techName;
     techListElement.appendChild(tech);
 })
