@@ -35,6 +35,8 @@ techList.forEach(([techName, techUrl]) => {
     techListElement.appendChild(tech);
 });
 
+// Contact form stuff
+
 var form = document.getElementById("my-form");
 
 async function handleSubmit(event) {
@@ -57,3 +59,17 @@ async function handleSubmit(event) {
         });
 }
 form.addEventListener("submit", handleSubmit);
+
+// Back to top button
+$(document).ready(function () {
+    // scroll body to 0px on click
+    $("#back-to-top").click(function () {
+        $("body,html").animate(
+            {
+                scrollTop: 0,
+            },
+            400
+        );
+        return false;
+    });
+});
