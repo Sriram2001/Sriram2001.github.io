@@ -94,12 +94,17 @@ h5 {
     font-size: 25px;
 }
 
-#about,
-#techIuse {
-    padding-top: 100px;
+
+.section-wrapper{
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 
-#about {
+.section-wrapper:nth-child(even){
+    background-color: #fafafa;
+}
+
+#about section {
     max-width: 50ch;
 }
 

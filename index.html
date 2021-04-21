@@ -26,7 +26,7 @@
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand nav-name" href="#">Sriram Rao</a>
+            <a class="navbar-brand nav-name" href="#">Sriram Rao Udupi</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +50,6 @@
     <div class="filler"></div>
 
     <div class="container">
-
 
         <!-- Landing View -->
         <section id="landing" class="row">
@@ -73,25 +72,64 @@
                 </div>
             </div>
         </section>
+    </div>
 
+    <div class="container-fluid section-wrapper" id="about">
+        <div class="container">
 
-        <!-- About section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a pre-final year student pursuing B.Tech in Information Technology at <a
-                    href="http://nitk.ac.in" target="_blank" rel="noopener noreferrer">National Institute of Technology Karnataka, Surathkal</a>.</p>
-            <p>My primary interests lie in full stack web development and I enjoy learning about new technologies and
-                building useful things with it. I am also intersted in speedcubing and enjoy playing volleyball!</p>
-        </section>
+            <!-- About section -->
+            <section>
+                <h2>About Me</h2>
+                <p>I am a pre-final year student pursuing B.Tech in Information Technology at <a
+                        href="http://nitk.ac.in" target="_blank" rel="noopener noreferrer">National Institute of
+                        Technology Karnataka, Surathkal</a>.
+                </p>
+                <p>My primary interests lie in full stack web development and I enjoy learning about new technologies
+                    and
+                    building useful things with it. I am also intersted in speedcubing and enjoy playing volleyball!</p>
+            </section>
+        </div>
+    </div>
+    <!-- Tech I use -->
+    <div class="section-wrapper">
 
-        <!-- Tech I use -->
-
-        <section id="techIuse">
-            <h2>Technologies I use</h2>
-            <p>Here are some of the technologies that I use on a day to day basis (not in any specific order)</p>
+        <section class="container" id="techIuse">
+            <h2>Technologies I Use</h2>
+            <p>Here are some of the technologies that I use (not in any specific order)</p>
             <div class="row d-flex justify-content-around" id='tech-list'></div>
         </section>
     </div>
+
+    <!-- Projects and Experience -->
+
+    <!-- Form -->
+    <div class="section-wrapper">
+
+        <section class="container" id="contact">
+            <h2>Send Me A Message</h2>
+            <div class="row">
+                <form id="my-form" class="col-md-6" action="https://formspree.io/f/xleadbdq" method="POST">
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input name='email' type="email" class="form-control" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                    </div>
+                    <!-- <label>Your Email</label>
+                <input type="email" name="email" />
+                <label>Message</label>
+                <input type="text" name="message" /> -->
+                    <div class="form-group">
+                        <label for="message">Your memssage</label>
+                        <textarea name='message' class="form-control" rows="3"
+                            placeholder="Write your message here"></textarea>
+                    </div>
+                    <button id="my-form-button" type="submit" class="btn btn-secondary">Submit</button>
+                    <p id="my-form-status"></p>
+                </form>
+            </div>
+        </section>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
